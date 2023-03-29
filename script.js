@@ -4,9 +4,9 @@ const navLinks = document.querySelectorAll('nav ul li a');
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        // Remove the "active" class from all navigation links
+      
         navLinks.forEach(link => link.classList.remove('active'));
-        // Add the "active" class to the clicked navigation link
+ 
         link.classList.add('active');
     });
 });
